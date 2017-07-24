@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "debug": "yarn build -- --env.debug=1",
-    "watch": "yarn build -- --watch",
+    "build:log": "yarn build -- --env=1",
+    "build:debug": "yarn build -- --env.debug=1",
+    "build:watch": "yarn build -- --watch",
     "build": "webpack"
   },
   "devDependencies": {
