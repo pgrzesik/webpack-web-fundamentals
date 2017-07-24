@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "debug": "yarn build -- --env.debug=1",
+    "watch": "yarn build -- --watch",
+    "build": "webpack"
+  },
   "devDependencies": {
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.6.1"
