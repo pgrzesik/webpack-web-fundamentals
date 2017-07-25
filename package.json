@@ -7,7 +7,7 @@
     "build:dev:bundleanalyze": "yarn build:dev -- --env.addons=bundleanalyze",
     "build:dev": "yarn build -- --env.env=dev",
     
-    "build": "webpack"
+    "build": "node ./node_modules/webpack/bin/webpack.js"
   },
   "devDependencies": {
     "webpack": "^3.3.0",
