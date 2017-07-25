@@ -7,6 +7,9 @@
     "build:dev:bundleanalyze": "yarn build:dev -- --env.addons=bundleanalyze",
     "build:dev": "yarn build -- --env.env=dev",
     
+    "debug:dev": "yarn debug -- --env.env=dev",
+
+    "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js",
     "build": "node ./node_modules/webpack/bin/webpack.js"
   },
   "devDependencies": {
