@@ -7,7 +7,7 @@ module.exports = {
       {
         test: /\.css/,
         use: ExtractTextWebpackPlugin.extract({
-          loader: "css-loader",
+          use: "css-loader",
           fallback: "style-loader"
         })
       }
