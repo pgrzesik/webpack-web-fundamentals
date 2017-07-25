@@ -8,12 +8,14 @@ const addons = (addonsArg) => {
 }
 
 module.exports = (env) => {
-    if (!env) {
-        throw new Error('You must pass an --env.env flag.');
+    let envConfig = {};
+    let addonsArg = undefined;
+    if (env) {
+        envConfig = require(`./build-utils/webpack.${env.env}`);
+        addonsArg = env.addons;
     }
     
-    const envConfig = require(`./build-utils/webpack.${env.env}`);
-    const mergedConfig = webpackMerge(commonConfig, envConfig, ...addons(env.addons));
+    const mergedConfig = webpackMerge(commonConfig, envConfig, ...addons(addonsArg));
 
     return mergedConfig;
 };

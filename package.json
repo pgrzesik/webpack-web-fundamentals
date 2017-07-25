@@ -7,7 +7,8 @@
     "build:dev": "yarn build -- --env.env=dev",
     "debug:dev": "yarn debug -- --env.env=dev",
     "debug": "node --inspect --debug-brk ./node_modules/webpack/bin/webpack.js",
-    "build": "node ./node_modules/webpack/bin/webpack.js"
+    "build": "node ./node_modules/webpack/bin/webpack.js",
+    "webpack-dev-server": "webpack-dev-server" 
   },
   "devDependencies": {
     "file-loader": "^0.11.2",
